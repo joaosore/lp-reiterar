@@ -1,0 +1,34 @@
+{
+  "name": "reiterar",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "watch": "webpack -w --mode development",
+    "prod": "webpack --mode production"
+  },
+  "keywords": [
+    "theme"
+  ],
+  "author": "Johnny Dev",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "webpack": "^4.41.0",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^8.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack-cli": "^3.3.9"
+  }
+}
