@@ -1,0 +1,115 @@
+.somos-a-solucao {
+  min-height: 600px;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    height: 100%;
+    position: relative;
+    .row {
+      height: 50%;
+      &:first-child {
+        padding-top: 143px;
+      }
+      &:nth-child(2) {
+        height: auto;
+      }
+      .box-title {
+        padding-right: 20px;
+        h1 {
+          margin: 0;
+          font-size: 3em;
+        }
+      }
+      .box-dados {
+        p {
+          max-width: 459px;
+          opacity: 0.5;
+          font-size: 1.125em;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.8;
+          letter-spacing: normal;
+          color: #06012e;
+          margin: 0;
+        }
+      }
+      .col-custom {
+        height: 109px;
+        margin-bottom: 24px;
+        .card-status {
+          height: 109px;
+          border-radius: 4px;
+          background-color: #f7f8fd;
+          display: flex;
+          align-items: center;
+          padding: 40px;
+          .circle {
+            width: 24px;
+            height: 24px;
+            background-color: #5e4dff;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 24px;
+            min-width: 24px;
+          }
+          p {
+            max-width: 314px;
+            margin: 0;
+            font-size: 1em;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: normal;
+            color: #06012e;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .somos-a-solucao {
+    height: auto;
+    .container {
+      .row {
+        &:first-child {
+        }
+        &:nth-child(2) {
+        }
+        .box-title {
+          h1 {
+            text-align: center;
+            width: 100%;
+            font-size: 2em;
+            margin-bottom: 1rem;
+          }
+        }
+        .box-dados {
+          p {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+        }
+        .col-custom {
+          .card-status {
+            .circle {
+            }
+            p {
+            }
+          }
+        }
+      }
+    }
+  }
+}

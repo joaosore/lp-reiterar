@@ -2,17 +2,15 @@
 @import "./global/fonts.scss";
 @import "./scss/header.scss";
 @import "./scss/inicio.scss";
-@import "./scss/sistema.scss";
+@import "./scss/sistema-seguro.scss";
+@import "./scss/somos-a-solucao.scss";
+@import "./scss/como-a-reiterar-trabalha.scss";
 
 * {
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
-}
-
-.container {
-  max-width: 1440px;
 }
 
 body {
@@ -24,12 +22,5 @@ body {
 @media screen and (max-width: 1330px) {
   body {
     font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  h1 {
-    font-size: 2em;
-    width: 100%;
   }
 }

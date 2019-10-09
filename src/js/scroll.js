@@ -2,12 +2,18 @@ import { init_logo } from "./menu";
 
 export function init_scroll() {
   let width = $(window).width();
+  let scroll_position = $(window).scrollTop();
 
   scroll();
   if (width <= 991) {
     init_logo(true);
   } else {
-    init_logo(false);
+    if (scroll_position > 10) {
+      $("header").addClass("scroll");
+      init_logo(true);
+    } else {
+      init_logo(false);
+    }
   }
 }
 

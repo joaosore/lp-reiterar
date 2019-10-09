@@ -1,4 +1,4 @@
-.sistema {
+.sistema-seguro {
   min-height: 600px;
   height: 100vh;
   background-position: center;
@@ -13,16 +13,17 @@
     .row {
       height: 50%;
       &:first-child {
-        padding-top: 238px;
+        padding-top: 143px;
       }
       h1 {
         margin: 0;
+        font-size: 3em;
       }
       .box-dados {
         p {
           max-width: 459px;
           opacity: 0.5;
-          font-size: 1em;
+          font-size: 1.125em;
           font-weight: normal;
           font-style: normal;
           font-stretch: normal;
@@ -65,7 +66,7 @@
 }
 
 @media screen and (max-width: 991px) {
-  .sistema {
+  .sistema-seguro {
     height: auto;
     .container {
       .row {

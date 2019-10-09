@@ -24,7 +24,9 @@ header {
       }
     }
   }
-
+  .container {
+    max-width: 1440px;
+  }
   .navbar {
     padding: 0 100px;
     height: 95px;
