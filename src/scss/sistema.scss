@@ -1,0 +1,101 @@
+.sistema {
+  min-height: 600px;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    height: 100%;
+    position: relative;
+    .row {
+      height: 50%;
+      &:first-child {
+        padding-top: 238px;
+      }
+      h1 {
+        margin: 0;
+      }
+      .box-dados {
+        p {
+          max-width: 459px;
+          opacity: 0.5;
+          font-size: 1em;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.8;
+          letter-spacing: normal;
+          color: #06012e;
+          margin: 0;
+        }
+      }
+      .box-benefits {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .circle {
+          width: 72px;
+          height: 72px;
+          border-radius: 45px;
+          box-shadow: 0 12px 24px 0 rgba(93, 67, 255, 0.24);
+          background-color: #5e4dff;
+          margin-bottom: 45px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        p {
+          max-width: 185px;
+          font-size: 1.125em;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: #06012e;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sistema {
+    height: auto;
+    .container {
+      .row {
+        &:first-child {
+          padding-top: 50px;
+        }
+        h1 {
+          text-align: center;
+          width: 100%;
+          font-size: 2em;
+          margin-bottom: 1rem;
+        }
+        .box-dados {
+          p {
+            text-align: center;
+            width: 100%;
+          }
+        }
+        .box-benefits {
+          align-items: center;
+          justify-content: center;
+          .circle {
+            margin-bottom: 16px;
+          }
+          p {
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

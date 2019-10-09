@@ -1,0 +1,245 @@
+header {
+  z-index: 5;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  transition: all 350ms ease-in-out;
+  &.scroll {
+    background-color: #f7f8fd;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+    .navbar {
+      .navbar-collapse {
+        .navbar-nav {
+          .nav-item {
+            a {
+              color: #06012e;
+            }
+            .whatsapp {
+              background-color: #5e4dff;
+              opacity: 1;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navbar {
+    padding: 0 100px;
+    height: 95px;
+    .menu-mobile {
+      display: none;
+    }
+    .navbar-collapse {
+      justify-content: space-between;
+      padding-left: 100px;
+      transition: all 350ms ease-in-out;
+      .navbar-nav {
+        &.menu-principal {
+          min-width: 575px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          transition: all 350ms ease-in-out;
+        }
+        &.menu-secundario {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          min-width: 270px;
+          transition: all 350ms ease-in-out;
+        }
+        .nav-item {
+          a {
+            font-family: "Circular Std";
+            font-size: 1em;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #fff;
+            transition: all 350ms ease-in-out;
+            &:hover {
+              color: #5e4dff;
+            }
+          }
+          &.active {
+            a {
+              color: #5e4dff;
+            }
+          }
+          .whatsapp {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 13px 44px;
+            border-radius: 50px;
+            color: #ffffff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 350ms ease-in-out;
+            &:hover {
+              background-color: #8578ff;
+              color: #ffffff;
+            }
+            &:after {
+              content: "";
+              background-image: url(./imgs/whatsapp-icon.svg);
+              width: 16px;
+              height: 16px;
+              display: block;
+              margin-left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  header {
+    .navbar {
+      .navbar-collapse {
+        padding-left: 50px;
+        .navbar-nav {
+          &.menu-principal {
+            min-width: 525px;
+          }
+          &.menu-secundario {
+            min-width: 240px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    .navbar {
+      padding: 0 15px;
+      .navbar-collapse {
+        padding-left: 25px;
+        .navbar-nav {
+          &.menu-principal {
+            min-width: 525px;
+          }
+          &.menu-secundario {
+            min-width: 240px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header {
+    background-color: #f7f8fd;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+      a {
+        margin: 0;
+      }
+      .navbar-collapse {
+        .navbar-nav {
+          .nav-item {
+            a {
+              color: #06012e;
+            }
+            .whatsapp {
+              background-color: #5e4dff;
+              opacity: 1;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .menu-mobile {
+        position: relative;
+        width: 30px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        z-index: 10;
+        .bar {
+          background-color: #8173ff;
+          height: 2px;
+          width: 100%;
+          &.top {
+            transition: all 350ms ease-in-out;
+            position: absolute;
+            top: 0;
+          }
+          &.bottom {
+            transition: all 350ms ease-in-out;
+            position: absolute;
+            bottom: 0;
+          }
+          &.left {
+            transition: all 350ms ease-in-out;
+            position: absolute;
+          }
+          &.right {
+            transition: all 350ms ease-in-out;
+            position: absolute;
+          }
+        }
+        &.active {
+          .bar {
+            &.top {
+              transition: all 350ms ease-in-out;
+              position: absolute;
+              top: 0;
+              opacity: 0;
+            }
+            &.bottom {
+              transition: all 350ms ease-in-out;
+              position: absolute;
+              bottom: 0;
+              opacity: 0;
+            }
+            &.left {
+              transform: rotateZ(45deg);
+              position: absolute;
+            }
+            &.right {
+              transform: rotateZ(-45deg);
+              position: absolute;
+            }
+          }
+        }
+      }
+      .navbar-collapse {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        left: 0;
+        top: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        background-color: #fff;
+        transform: translateX(100%);
+        transition: all 350ms ease-in-out;
+        &.active {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,35 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./global/fonts.scss";
+@import "./scss/header.scss";
+@import "./scss/inicio.scss";
+@import "./scss/sistema.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+}
+
 body {
-  background-color: firebrick;
+  font-family: "Circular Std";
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+@media screen and (max-width: 1330px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 2em;
+    width: 100%;
+  }
 }

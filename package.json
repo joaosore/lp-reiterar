@@ -16,6 +16,7 @@
   "homepage": "",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "custom": "^0.0.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
     "webpack": "^4.41.0",
@@ -25,6 +26,7 @@
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^4.2.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "sass-loader": "^8.0.0",
