@@ -1,5 +1,4 @@
 export function init_ancora() {
-  init_start_url_scroll();
   init_scroll_section();
   var $doc = $("html, body");
   $("a").click(function() {
@@ -8,32 +7,28 @@ export function init_ancora() {
       if ($(el).length > 0) {
         $(".menu-mobile").removeClass("active");
         $(".collapse").removeClass("active");
-        window.location.hash = $.attr(this, "href");
+
+        var i = 0;
+        if ($.attr(this, "href") === "#como-a-reiterar-trabalha") {
+          var width = $(window).width();
+          if (width <= 991) {
+            var i = 0;
+          } else {
+            var i = 95;
+          }
+        }
+
         $doc.animate(
           {
-            scrollTop: $($.attr(this, "href")).offset().top
+            scrollTop: $($.attr(this, "href")).offset().top - i
           },
           500
         );
+        window.location.hash = $.attr(this, "href");
         return false;
       }
     }
   });
-}
-
-function init_start_url_scroll() {
-  var hash = window.location.hash;
-  var el = $("body").find(hash);
-  var $doc = $("html, body");
-
-  if (el.length > 0) {
-    $doc.animate(
-      {
-        scrollTop: $(el).offset().top
-      },
-      500
-    );
-  }
 }
 
 function init_scroll_section() {
@@ -73,7 +68,7 @@ function init_scroll_section() {
     var scrollPosition = $(window).scrollTop();
 
     if (scrollPosition >= inicio_top && scrollPosition <= inicio_bottom) {
-      window.location.hash = "#inicio";
+      // window.location.hash = "#inicio";
       $(".nav-item").removeClass("active");
       $('a[href="#inicio"]')
         .parent()
@@ -82,7 +77,7 @@ function init_scroll_section() {
       scrollPosition >= sistema_seguro_top &&
       scrollPosition <= sistema_seguro_bottom
     ) {
-      window.location.hash = "#sistema-seguro";
+      // window.location.hash = "#sistema-seguro";
       $(".nav-item").removeClass("active");
       $('a[href="#sistema-seguro"]')
         .parent()
@@ -91,7 +86,7 @@ function init_scroll_section() {
       scrollPosition >= somos_a_solucao_top &&
       scrollPosition <= somos_a_solucao_bottom
     ) {
-      window.location.hash = "#somos-a-solucao";
+      // window.location.hash = "#somos-a-solucao";
       $(".nav-item").removeClass("active");
       $('a[href="#somos-a-solucao"]')
         .parent()
@@ -100,7 +95,7 @@ function init_scroll_section() {
       scrollPosition >= como_a_reiterar_trabalha_top &&
       scrollPosition <= como_a_reiterar_trabalha_bottom
     ) {
-      window.location.hash = "#como-a-reiterar-trabalha";
+      // window.location.hash = "#como-a-reiterar-trabalha";
       $(".nav-item").removeClass("active");
       $('a[href="#como-a-reiterar-trabalha"]')
         .parent()

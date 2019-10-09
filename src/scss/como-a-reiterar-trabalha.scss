@@ -1,7 +1,7 @@
 .como-a-reiterar-trabalha {
   position: relative;
   background-color: #695aff;
-  margin-top: 55px;
+  margin-top: 145px;
   .mask {
     position: absolute;
     width: 50%;
@@ -10,7 +10,7 @@
   }
   .container {
     height: 948px;
-    padding-top: 125px;
+    padding-top: 80px;
     .row {
       height: 100%;
       .view-box-dados {
@@ -86,6 +86,7 @@
 
 @media screen and (max-width: 991px) {
   .como-a-reiterar-trabalha {
+    margin-top: 0;
     .mask {
       display: none;
     }

@@ -15,12 +15,15 @@
   "license": "ISC",
   "homepage": "",
   "dependencies": {
+    "add": "^2.0.6",
     "bootstrap": "^4.3.1",
     "custom": "^0.0.0",
     "jquery": "^3.4.1",
+    "jquery-parallax.js": "^1.5.0",
     "popper.js": "^1.15.0",
     "webpack": "^4.41.0",
-    "webpack-dev-server": "^3.8.2"
+    "webpack-dev-server": "^3.8.2",
+    "yarn": "^1.19.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.3",
