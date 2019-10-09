@@ -27,6 +27,11 @@ header {
   .container {
     max-width: 1440px;
   }
+  .navbar-brand {
+    object {
+      pointer-events: none;
+    }
+  }
   .navbar {
     padding: 0 100px;
     height: 95px;
@@ -54,6 +59,7 @@ header {
         }
         .nav-item {
           a {
+            padding: 20px;
             font-family: "Circular Std";
             font-size: 1em;
             font-weight: normal;
@@ -78,6 +84,7 @@ header {
             padding: 13px 44px;
             border-radius: 50px;
             color: #ffffff;
+            outline: none;
 
             display: flex;
             align-items: center;

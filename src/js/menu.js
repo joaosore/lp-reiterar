@@ -5,7 +5,7 @@ export function init_menu() {
   });
 }
 
-export function init_logo(scroll = false) {
+export function init_logo(scroll) {
   var mySVG = document.getElementById("logo-svg");
   var svgDoc = mySVG.contentDocument;
 

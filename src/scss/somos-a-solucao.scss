@@ -83,6 +83,7 @@
     .container {
       .row {
         &:first-child {
+          padding-top: 100px;
         }
         &:nth-child(2) {
         }

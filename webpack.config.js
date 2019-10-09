@@ -30,11 +30,11 @@ module.exports = {
       },
       {
         test: /\.(otf|ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
-        loader: "file-loader?name=./assets/[name].[ext]"
+        loader: "file-loader?name=./imgs/[name].[ext]"
       },
       {
         test: /\.(png|jpg?)(\?[a-z0-9=&.]+)?$/,
-        loader: "file-loader?name=./assets/[name].[ext]"
+        loader: "file-loader?name=./imgs/[name].[ext]"
       },
       {
         test: /\.ts$/,
@@ -59,7 +59,7 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         from: "src/imgs/*",
-        to: "./assets/",
+        to: "./imgs/",
         flatten: true
       }
     ]),

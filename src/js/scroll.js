@@ -1,8 +1,8 @@
 import { init_logo } from "./menu";
 
 export function init_scroll() {
-  let width = $(window).width();
-  let scroll_position = $(window).scrollTop();
+  var width = $(window).width();
+  var scroll_position = $(window).scrollTop();
 
   scroll();
   if (width <= 991) {
@@ -18,14 +18,14 @@ export function init_scroll() {
 }
 
 $(window).resize(function() {
-  init_scroll();
+  init_scroll(false);
 });
 
 function scroll() {
-  let scroll_status = true;
+  var scroll_status = true;
   $(window).scroll(function(event) {
     var scroll = $(window).scrollTop();
-    let width = $(window).width();
+    var width = $(window).width();
 
     if (width > 991) {
       if (scroll > 10) {
