@@ -34,7 +34,7 @@ export function init_ancora() {
 function init_scroll_section() {
   var width = $(window).width();
   if (width <= 991) {
-    var i = 50;
+    var i = 65;
   } else {
     var i = 95;
   }
