@@ -43,6 +43,32 @@
       color: #06012e;
       margin-bottom: 56px;
     }
+    .whatsapp-contato {
+      background-color: #5e4dff;
+      opacity: 1;
+      color: #fff;
+      padding: 13px 44px;
+      border-radius: 50px;
+      color: #ffffff;
+      outline: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 350ms ease-in-out;
+      &:hover {
+        background-color: #8578ff;
+        color: #ffffff;
+      }
+      &:after {
+        content: "";
+        background-image: url(./imgs/whatsapp-icon.svg);
+        width: 16px;
+        height: 16px;
+        display: block;
+        margin-left: 15px;
+      }
+    }
     button {
       display: none !important;
       border: none;

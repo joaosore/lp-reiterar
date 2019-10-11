@@ -27,7 +27,7 @@
     padding-bottom: 40px;
   }
 
-  button {
+  a {
     background-color: #5e4dff;
     border: none;
     color: #fff;
@@ -36,7 +36,9 @@
     margin: auto;
     outline: none;
     transition: all 350ms ease-in-out;
-
+    max-width: 310px;
+    justify-content: space-between;
+    
     display: flex;
     align-items: center;
     position: relative;
@@ -71,7 +73,7 @@
       text-align: center;
       width: 100%;
     }
-    button {
+    a {
       &:after {
         content: "";
         display: block;

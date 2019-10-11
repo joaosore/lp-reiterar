@@ -13,7 +13,6 @@
     height: 948px;
     padding-top: 80px;
     .row {
-      height: 100%;
       .view-box-dados {
         display: flex;
         flex-direction: column;
@@ -35,6 +34,7 @@
         line-height: normal;
         letter-spacing: normal;
         color: #ffffff;
+        padding-bottom: 100px;
       }
     }
     .box {
