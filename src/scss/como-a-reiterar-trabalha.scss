@@ -41,12 +41,13 @@
       width: 100%;
       max-height: 350px;
       display: flex;
-      justify-content: center;
-      flex-direction: column;
+      align-items: center;
+      flex-direction: row;
       flex-wrap: wrap;
       .box-dados {
         display: flex;
         margin-bottom: 41px;
+        min-width: 50%;
         .circle {
           margin-right: 24px;
           min-width: 49px;
@@ -94,6 +95,7 @@
 @media screen and (max-width: 991px) {
   .como-a-reiterar-trabalha {
     margin-top: 0;
+    max-height: none;
     .mask {
       display: none;
     }
