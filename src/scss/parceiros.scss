@@ -9,11 +9,13 @@
     opacity: 0.08;
     border-bottom: solid 1px #131313;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 70px;
   }
   img {
     margin: 0 15px;
     max-width: 150px;
+    width: 20%;
+    margin-bottom: 30px;
   }
 }
 
@@ -22,6 +24,7 @@
     padding: 100px 0;
     padding-bottom: 0;
     img {
+      width: 150px;
       max-width: 200px;
       margin-bottom: 2em;
       &:last-child {

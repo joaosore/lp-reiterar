@@ -44,7 +44,7 @@ header {
       transition: all 350ms ease-in-out;
       .navbar-nav {
         &.menu-principal {
-          min-width: 575px;
+          min-width: 400px;
           display: flex;
           align-items: center;
           justify-content: space-around;
@@ -56,6 +56,17 @@ header {
           justify-content: space-between;
           min-width: 270px;
           transition: all 350ms ease-in-out;
+        }
+        &.languages {
+          display: flex;
+          align-items: center;
+          li {
+            display: block;
+            margin-right: 15px;
+            &:last-child {
+              margin: 0;
+            }
+          }
         }
         .nav-item {
           a {
@@ -116,7 +127,7 @@ header {
         padding-left: 50px;
         .navbar-nav {
           &.menu-principal {
-            min-width: 525px;
+            min-width: 400px;
           }
           &.menu-secundario {
             min-width: 240px;
@@ -169,6 +180,10 @@ header {
               opacity: 1;
               color: #fff;
             }
+          }
+          &.languages {
+            padding-top: 20px;
+            flex-direction: row;
           }
         }
       }

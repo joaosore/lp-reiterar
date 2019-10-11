@@ -1,6 +1,7 @@
 .como-a-reiterar-trabalha {
   position: relative;
   background-color: #695aff;
+  max-height: 895.56px;
   margin-top: 145px;
   .mask {
     position: absolute;
@@ -14,19 +15,20 @@
     .row {
       height: 100%;
       .view-box-dados {
-        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
       }
     }
     .title {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       img {
         margin-bottom: 54px;
       }
       h1 {
-        max-width: 400px;
-        font-size: 4em;
+        font-size: 3em;
         font-weight: 500;
         font-style: normal;
         font-stretch: normal;
@@ -36,7 +38,12 @@
       }
     }
     .box {
-      max-width: 446px;
+      width: 100%;
+      max-height: 350px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
       .box-dados {
         display: flex;
         margin-bottom: 41px;
@@ -115,6 +122,7 @@
         }
       }
       .box {
+        max-height: none;
         .box-dados {
           .circle {
           }
