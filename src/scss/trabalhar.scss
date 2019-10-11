@@ -1,0 +1,59 @@
+.trabalhar {
+  &:before {
+    content: "";
+    opacity: 0.08;
+    border-bottom: 1px solid #131313;
+    width: 100%;
+    height: 1px;
+    position: relative;
+    display: block;
+  }
+  .box-trabalhar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 0;
+    h2 {
+      font-size: 1.5em;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: center;
+      color: #06012e;
+    }
+    button {
+      border-radius: 100px;
+      background-color: #5e4dff;
+      padding: 5px 25px;
+      margin-left: 30px;
+      transition: all 350ms ease-in-out;
+      &:hover {
+        background-color: #8578ff;
+      }
+      span {
+        font-size: 0.875em;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .trabalhar {
+    .box-trabalhar {
+      flex-direction: column;
+      button {
+        margin: 0;
+      }
+    }
+  }
+}
