@@ -1,0 +1,111 @@
+.dados {
+  background-color: #f7f8fd;
+  padding: 72px 0;
+  h2 {
+    font-size: 1.125em;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #06012e;
+  }
+  a,
+  p {
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    color: #828096;
+    max-width: 220px;
+    display: flex;
+    align-items: center;
+    transition: all 350ms ease-in-out;
+    img {
+      pointer-events: none;
+    }
+    &:hover {
+      color: #8578ff;
+    }
+    &.phone {
+      &::before {
+        content: "";
+        background-image: url("./imgs/phone.svg");
+        position: relative;
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin-right: 15px;
+        min-width: 20px;
+      }
+    }
+    &.whats {
+      &::before {
+        content: "";
+        background-image: url("./imgs/whats.svg");
+        position: relative;
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin-right: 15px;
+        min-width: 20px;
+      }
+    }
+    &.email {
+      &::before {
+        content: "";
+        background-image: url("./imgs/email.svg");
+        position: relative;
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin-right: 15px;
+        min-width: 20px;
+      }
+    }
+  }
+  .midias {
+    display: flex;
+    a {
+      padding-right: 25px;
+      transition: all 350ms ease-in-out;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  .box-phones {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dados {
+    h2 {
+      text-align: center;
+    }
+    p {
+      margin: auto;
+      text-align: center;
+    }
+    .box-phones {
+      max-width: 230px;
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .midias {
+      align-items: center;
+      justify-content: center;
+      a {
+        padding-right: 45px;
+        &:last-child {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
